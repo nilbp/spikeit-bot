@@ -1,4 +1,6 @@
 import discord
+import os
+
 from discord.ext import commands
 
 intents = discord.Intents.default()
@@ -14,7 +16,7 @@ async def on_ready():
 async def hola(ctx):
     await ctx.send("¡Hola!")
 
-bot.run('TU_TOKEN_DE_DISCORD')
+bot.run(os.getenv("spikeit-bot-token"))
 
 
 
