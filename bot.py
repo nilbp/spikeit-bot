@@ -16,7 +16,7 @@ async def on_ready():
 async def hola(ctx):
     await ctx.send("¡Hola!")
 
-bot.run(os.getenv("spikeit-bot-token"))
+bot.run(os.getenv("SPIKEIT_BOT_TOKEN"))
 
 
 
